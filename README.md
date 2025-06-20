@@ -30,17 +30,18 @@ There are two categories:
 
 Each entry should include the following fields, see this example:
 
-| Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available |
-|------------------------|------------------|---------------------------|
-| `0.1`                  | `123.45.67.89:8333` or `abcxyz123.onion:8333` | Yes ([link](https://your-explorer.com)) / No |
+Name | Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available
+|------------------------|------------------|---------------------------|---------------------------|
+| `NodeName`           | `0.1`                  | `123.45.67.89:8333` or `abcxyz123.onion:8333` | Yes ([link](https://your-explorer.com)) / No |
 
 ---
 
 ## 🌍 Economic Nodes
 
-| Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available |
-|------------------------|------------------|---------------------------|
-|                        |                  |                           |
+Name | Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available
+|------------------------|------------------|---------------------------|---------------------------|
+| `David Coen's BTCpay Server`           | `0.1`                  | `zxycrhmh7lb3xsmlgd6464ou77mwsgi6wk2otap2rjlbr5kw3if5hsyd.onion:8333` | No |
+
 
 _Add your node here if it's **not mining** but **accepts and relays** sub-1 sat/vByte transactions._
 
@@ -48,9 +49,8 @@ _Add your node here if it's **not mining** but **accepts and relays** sub-1 sat/
 
 ## ⛏️ Mining Nodes
 
-| Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available |
-|------------------------|------------------|---------------------------|
-|                        |                  |                           |
+Name | Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available
+|------------------------|------------------|---------------------------|---------------------------|
 
 _Add your node here if it's **a mining node** or relays transactions to mining infrastructure that accepts low-fee transactions._
 
