@@ -56,6 +56,61 @@ _Add your node here if it's **a mining node** or relays transactions to mining i
 
 ---
 
+## How to Set Up Your Node
+
+If you want to support **sub‑sat/vbyte** transactions, follow these steps:
+
+### 1. Lower the minimum relay fee
+
+To relay transactions with fees below 1 sat/vbyte, you must lower your node’s minimum relay fee.
+
+Edit your `bitcoin.conf` file, usually by running:
+
+`bash
+nano ~/.bitcoin/bitcoin.conf`
+
+Then add or modify the following line:
+
+`minrelaytxfee=0.00000100`
+
+This sets the minimum relay fee to 0.00000100 BTC/kB, which equals 0.1 sat/vbyte — you can customize this parameter as you wish.
+
+After saving the file (Ctrl+O, Enter, then Ctrl+X to exit), restart your node:
+
+``bitcoin-cli stop``
+
+``bitcoind``
+
+### 2. Verify mempool policy
+
+Once your node is running, check the active relay fee with:
+
+``bitcoin-cli getmempoolinfo``
+
+Ensure the minrelaytxfee field reflects your updated setting (e.g., 0.00000100).
+
+## How to Connect to Sub-Sat Compatible Nodes
+
+Your node will only relay and receive sub-sat/vbyte transactions if it connects to peers that also support them. 
+
+To do this, you can choose a node from the list in this repository.
+
+Connect manually using:
+
+``bitcoin-cli addnode <ip>:<port> add``
+
+Or add it permanently by updating your bitcoin.conf:
+
+``addnode=<ip>:<port>``
+
+    Confirm peer connections with:
+
+``bitcoin-cli getpeerinfo``
+
+Search the output for the target IP address to ensure a successful connection.
+
+---
+
 ## 📌 Disclaimer
 
 - Inclusion in this list does **not guarantee** that the node is online or reliable.
