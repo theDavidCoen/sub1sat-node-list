@@ -71,11 +71,14 @@ Edit your `bitcoin.conf` file, usually by running:
 `bash
 nano ~/.bitcoin/bitcoin.conf`
 
-Then add or modify the following line:
+Then add or modify the following lines:
 
-`minrelaytxfee=0.00000100`
+```
+minrelaytxfee=0.00000100
+incrementalrelayfee=0.000001
+```
 
-This sets the minimum relay fee to 0.00000100 BTC/kB, which equals 0.1 sat/vbyte — you can customize this parameter as you wish.
+This sets the minimum relay fee to 0.00000100 BTC/kB, which equals 0.1 sat/vbyte — you can customize this parameter as you wish. It also sets the incremental relay fee: the incremental *additional* fees a RBF replacement needs to pay.
 
 After saving the file (Ctrl+O, Enter, then Ctrl+X to exit), restart your node:
 
