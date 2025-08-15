@@ -43,6 +43,7 @@ Name | Min Relay Fee (sat/vB) | Node IP / .onion | Public Explorer Available
 | `David Coen's BTCpay Server`           | `0.1`                  | `zxycrhmh7lb3xsmlgd6464ou77mwsgi6wk2otap2rjlbr5kw3if5hsyd.onion:8333` | No |
 | `sil3ntnod3`           | `0.1`                  | `f6rlgxnw2daki5mzvowdrqjaxh2mygrj5poijfpm7e6il63sbeiftaqd.onion:8333` | No |
 | `meres`                | `0.1`                  | `qtobwhjhrtfflqtau3roy6vetmvp67c5adw5n2n3mkyfjzb2pad2bhyd.onion:8333` | No |
+| `Peter Todd`           | `0.1`                  | `libre-relay.btc.petertodd.net:8333` | No |
 
 
 _Add your node here if it's **not mining** but **accepts and relays** sub-1 sat/vByte transactions._
